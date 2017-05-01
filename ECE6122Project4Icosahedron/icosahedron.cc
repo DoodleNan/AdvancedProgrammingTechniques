@@ -203,7 +203,6 @@ void reshape(int width, int height){
   }else{
     glOrtho(-1 * aspect, 1 * aspect, -1, 1, -2.0, 2.0);
     glMatrixMode(GL_MODELVIEW);
-
     glutPostRedisplay();
   }
 }

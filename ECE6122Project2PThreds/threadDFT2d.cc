@@ -46,7 +46,8 @@ unsigned ReverseBits(unsigned v)
 // Undergrads can use the built-in barriers in pthreads.
 
 // Call MyBarrier_Init once in main
-void MyBarrier_Init(){// you will likely need some parameters)
+void MyBarrier_Init(){
+    // you will likely need some parameters)
     for (int i = 0; i<nThread; i++) {
         barrierCnt[i] = false;
     }
@@ -64,7 +65,8 @@ bool checkBarri(){
     return true;
 }
 // Each thread calls MyBarrier after completing the row-wise DFT
-void MyBarrier(){ // Again likely need parameters
+void MyBarrier(){ 
+    // Again likely need parameters
     while (checkBarri() == false) {
     }
 }
